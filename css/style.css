@@ -1,1 +1,9 @@
+@import url(./utils/_variables.scss);
+body {
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */
