@@ -1,0 +1,39 @@
+footer{
+    background-color: #353535;
+    color: $clr-text-btn;
+    padding-bottom: 30px;
+    h3{
+        font-family: "shrikhand";
+        letter-spacing: 0.09rem;
+        margin-left: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: $clr-text-btn;
+        margin:40px 0 0 15px;
+    }
+    .propose{
+        display: flex;
+        align-items: center;
+        i{
+            margin: 0 15px 0 15px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .partenaire{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        i{
+            margin: 0 13px 0 15px;
+        } 
+        p{
+            margin: 0;
+        }
+    }
+    p{
+        margin: 10px 0 10px 15px;
+    }
+}

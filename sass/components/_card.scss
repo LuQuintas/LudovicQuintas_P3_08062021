@@ -1,0 +1,115 @@
+// Card restaurant :main page
+.card{
+    position:relative;
+    width: 335px;
+    height: 250px;
+    border-radius:1rem;
+    margin: 15px 15px;
+    cursor: pointer;
+    @include shadow;
+    .far.fa-heart{
+        position: absolute;
+        right: 35px;
+        bottom: 20px;
+        font-size: 26px;
+        color: #919191;
+        z-index: 1;
+    }
+    .like{
+        position: absolute;
+        right: 36px;
+        bottom: 21px;
+        font-size: 24px;
+        z-index: 2;
+        background: $clr-heart;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        opacity: 0;
+        &:active{
+            animation: like 600ms ease-in-out ;
+            animation-fill-mode:forwards;
+        }
+    }
+    &__link{
+        z-index: 1;
+        &--heart{
+            z-index: 2;
+        }
+    }
+    &__img{
+        position: relative;
+        width: 100%;
+        height: 175px;
+        img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+        }
+        .new{
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+            background-color: $clr-tertiary;
+            border-radius: 0.2rem;
+            opacity: 1;
+            animation: new 2000ms  0s infinite alternate-reverse;
+            p{
+                color: darken($clr-tertiary, 30);
+                font-size: 14px;
+                font-weight: 600;
+                margin: 7px;
+            }
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+        margin-left: 10px;
+        h3{
+            margin-bottom: 5px;
+        }
+        p{
+            margin-top: 0;
+        }
+    }
+}
+
+// Card menu :menu page
+
+.cardmenu{
+    width: 350px;
+    height: 70px;
+    margin:15px 0px 0px 15px;
+    box-shadow: 0.2rem 0.2rem 1rem rgb(180, 177, 177);
+    border-radius: 1rem;
+    h3{
+        margin: 0 0 0 10px;
+    }
+    &__link{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        p{
+            color: #404040;
+            font-size: 15px;
+            margin: 0 0 0 10px;
+        }
+        span{
+            font-size: 15px;
+            font-weight: bolder;
+            margin-right: 20px;
+        }
+    }   
+}

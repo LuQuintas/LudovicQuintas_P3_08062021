@@ -1,0 +1,14 @@
+//BODY
+body{
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    a{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+    }
+}

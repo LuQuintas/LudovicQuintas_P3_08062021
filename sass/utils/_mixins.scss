@@ -1,13 +1,10 @@
-@mixin btn__gradient {
-    width: 220px;
-    height: 50px;
-    border: unset;
-    background:linear-gradient(to top,$clr-primary,$clr-secondary);
-    box-shadow: 0.2rem 0.2rem 1rem rgb(180, 177, 177);
-    color: $clr-text-btn;
-    border-radius: 2rem;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.01rem;
-    margin-bottom: 55px;
+@mixin shadow {
+    box-shadow:.2rem 0.2rem 1rem rgb(180, 177, 177);
+}
+
+@mixin btn-zoom {
+    transform: scale(1.02);
+    box-shadow:.3rem 0.4rem 2rem rgb(119, 117, 117);
+    filter:brightness(1.1);
+    cursor: pointer;
 }

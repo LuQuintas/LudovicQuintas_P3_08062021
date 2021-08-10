@@ -1,0 +1,17 @@
+.place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    .fas.fa-map-marker-alt{
+        font-size: 18px;
+        margin:0 25px 7px 0px;
+    }
+    p{
+        margin: 0;
+        letter-spacing: 0.08rem;
+    }
+}

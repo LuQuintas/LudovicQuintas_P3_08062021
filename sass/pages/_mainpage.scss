@@ -1,0 +1,40 @@
+// div info site
+.info{
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    text-align: center;
+    h2{
+        font-size: 24px;
+        font-weight: 900;
+        margin: 0px 70px 0 60px;}
+    p{
+        margin: 20px 30px 35px 35px;
+        font-size: 17px;
+    }
+}
+// div functionality
+.function{
+    justify-content: center;
+    padding: 40px 0;
+    h2{
+        // text-align: center;
+        margin-left: 20px;
+    }
+    &__choice{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+// section restaurant
+.restaurant{
+    justify-content: center;
+    background-color: #F6F6F6;
+    padding: 40px 0;
+    h2{
+        margin-left: 15px;
+    }
+    &__conteiner{
+        align-items: center;
+    }
+}

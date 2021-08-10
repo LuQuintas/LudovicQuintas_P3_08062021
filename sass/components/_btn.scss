@@ -1,0 +1,62 @@
+// Button explorer main page and command menu
+.btn{
+    text-align: center;
+    padding-top: 40px;
+    &__gradient{
+        width: 220px;
+        height: 50px;
+        border: unset;
+        background:$clr-btn;
+        color: $clr-text-btn;
+        border-radius: 2rem;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.01rem;
+        margin-bottom: 55px;
+        @include shadow;
+        transform: scale(1);
+        &:hover{
+            @include btn-zoom;
+        }
+    }
+}
+
+// Button function main page functionality menu
+
+.function__btn{
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color:#F6F6F6;
+    margin: 15px 0;
+    border-radius: 1.5rem;
+    height: 75px;
+    width: 325px;
+    @include shadow;
+    &:hover{
+        background-color:lighten($clr-primary,36);
+        cursor: pointer;
+        i{
+            color: $clr-primary;
+        }
+    }
+    p{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    span{
+        position: absolute;
+        left: -15px;
+        padding: 5px 10px;
+        border-radius: 3rem;
+        background-color: $clr-primary;
+        color: $clr-text-btn;
+    }
+    i{
+        color: gray;
+        margin:0 25px 0 30px;
+        size: 30px;
+    }
+}
