@@ -17,11 +17,11 @@
     }
     80%{
         opacity: 0.70;
-        transform: scale(1.3);
+        transform: scale(1.5);
     }
     90%,100%{
         opacity: 1;
-        transform: scale(1);
+        transform: scale(1.1);
     }
 }
 
@@ -32,5 +32,19 @@
     }
     from{
         opacity: 0;
+    }
+}
+
+@keyframes cardmenu-appears{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50%{
+        opacity: 50%;
+    }
+    90%,100%{
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

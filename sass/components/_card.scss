@@ -11,23 +11,21 @@
         position: absolute;
         right: 35px;
         bottom: 20px;
-        font-size: 26px;
-        color: #919191;
+        font-size: 24px;
         z-index: 1;
     }
     .like{
         position: absolute;
-        right: 36px;
-        bottom: 21px;
-        font-size: 24px;
+        right: 35px;
+        bottom: 20px;
+        font-size: 25px;
         z-index: 2;
         background: $clr-heart;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         opacity: 0;
-        &:active{
-            animation: like 600ms ease-in-out ;
-            animation-fill-mode:forwards;
+        &:hover{
+            animation: like 400ms ease-in both;
         }
     }
     &__link{
@@ -88,8 +86,12 @@
     margin:15px 0px 0px 15px;
     box-shadow: 0.2rem 0.2rem 1rem rgb(180, 177, 177);
     border-radius: 1rem;
+    overflow: hidden;
     h3{
+        width: 100%;
         margin: 0 0 0 10px;
+        @include txt-hidden;
+        transition: width 600ms ease-in-out;
     }
     &__link{
         position: relative;
@@ -102,14 +104,66 @@
         display: flex;
         justify-content: space-between;
         p{
+            width: 100%;
             color: #404040;
             font-size: 15px;
             margin: 0 0 0 10px;
+            @include txt-hidden;
+            transition: width 600ms ease-in-out;
         }
         span{
+            display: inline-block;
             font-size: 15px;
             font-weight: bolder;
             margin-right: 20px;
+            transition: transform 600ms ease-in-out;
         }
     }   
+}
+.order{
+    position: absolute;
+    right:-62px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60px;
+    height: 70px;
+    background: $clr-tertiary;
+    box-shadow: 0px 0px 5px #404040;
+    border-radius: 0 0.9rem 0.9rem 0;
+    transform-origin: right;
+    transition: transform 600ms ease-in-out;
+    &__checked{
+        margin: auto;
+        color: $clr-text-btn;
+        font-size: 22px;
+        transition: transform 600ms ease-in-out;
+    }
+}
+.cardmenu:hover{
+    .order, span{
+        transform: translateX(-60px);
+        &__checked{
+        transform: rotate(-360deg);
+        }
+    }
+    p{
+        width: 60%;
+    }
+    h3{
+        width: 80%;
+    }
+}
+.cardmenu--delay0{
+    animation: cardmenu-appears 2000ms 1 ease-in-out forwards;
+}
+.cardmenu--delay1{
+    animation: cardmenu-appears 2000ms 100ms 1 ease-in-out forwards;   
+}
+.cardmenu--delay2{
+    animation: cardmenu-appears 2000ms 200ms 1 ease-in-out forwards;   
+} 
+.cardmenu--delay3{
+    animation: cardmenu-appears 2000ms 300ms 1 ease-in-out forwards;   
+
 }

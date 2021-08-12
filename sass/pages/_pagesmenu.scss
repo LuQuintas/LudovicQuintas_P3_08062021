@@ -32,25 +32,23 @@
         position: absolute;
         right: 35px;
         bottom: 20px;
-        font-size: 26px;
-        color: #919191;
+        font-size: 24px;
         z-index: 1;
         cursor: pointer;
     }
     .like{
         position: absolute;
-        right: 36px;
-        bottom: 21px;
-        font-size: 24px;
+        right: 35px;
+        bottom: 20px;
+        font-size: 25px;
         z-index: 2;
         background: $clr-heart;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         opacity: 0;
         cursor: pointer;
-        &:active{
-            animation: like 600ms ease-in-out ;
-            animation-fill-mode:forwards;
+        &:hover{
+            animation: like 600ms ease-in-out forwards ;
         }
     }
 }
