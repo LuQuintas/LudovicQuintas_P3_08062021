@@ -6,5 +6,7 @@ $clr-text-btn:#fff;
 $clr-heart:linear-gradient(to top, #FF79DA,#9356DC);
 $clr-btn:linear-gradient(to top,$clr-primary,$clr-secondary);
 
-
-    
+$breakpoints:(
+    mobile-down: 600px,
+    desktop: 1366px
+);

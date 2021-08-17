@@ -1,7 +1,10 @@
 footer{
+    position: relative;
     background-color: #353535;
     color: $clr-text-btn;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    height: 100%;
+    line-height: 1.8em;
     h3{
         font-family: "shrikhand";
         letter-spacing: 0.09rem;
@@ -25,7 +28,6 @@ footer{
     .partenaire{
         display: flex;
         align-items: center;
-        margin-top: 10px;
         i{
             margin: 0 13px 0 15px;
         } 
@@ -34,6 +36,13 @@ footer{
         }
     }
     p{
-        margin: 10px 0 10px 15px;
+        margin: 0px 0 0px 15px;
     }
+}
+// validator css
+
+.validator{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }

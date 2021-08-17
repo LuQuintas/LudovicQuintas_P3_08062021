@@ -1,12 +1,15 @@
 // Card restaurant :main page
 .card{
     position:relative;
-    width: 335px;
+    width: 100%;
     height: 250px;
     border-radius:1rem;
     margin: 15px 15px;
     cursor: pointer;
     @include shadow;
+    @include mobile-down{
+        width: 45%;
+    }
     .far.fa-heart{
         position: absolute;
         right: 35px;
@@ -16,52 +19,14 @@
     }
     .like{
         position: absolute;
-        right: 35px;
-        bottom: 20px;
-        font-size: 25px;
+        right: 34px;
+        bottom: 19px;
+        font-size: 26px;
         z-index: 2;
         background: $clr-heart;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         opacity: 0;
-        &:hover{
-            animation: like 400ms ease-in both;
-        }
-    }
-    &__link{
-        z-index: 1;
-        &--heart{
-            z-index: 2;
-        }
-    }
-    &__img{
-        position: relative;
-        width: 100%;
-        height: 175px;
-        img{
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem 1rem 0 0;
-        object-fit: cover;
-        }
-        .new{
-            position: absolute;
-            top: 15px;
-            right: 10px;
-            text-align: center;
-            width: 80px;
-            height: 30px;
-            background-color: $clr-tertiary;
-            border-radius: 0.2rem;
-            opacity: 1;
-            animation: new 2000ms  0s infinite alternate-reverse;
-            p{
-                color: darken($clr-tertiary, 30);
-                font-size: 14px;
-                font-weight: 600;
-                margin: 7px;
-            }
-        }
     }
     &__info{
         display: flex;
@@ -77,16 +42,60 @@
         }
     }
 }
+.card__img{
+    position: relative;
+    width: 100%;
+    height: 175px;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+}
+.card__link{
+    z-index: 1;
+    &--heart{
+        z-index: 2;
+        &:hover .like{
+            animation: like 500ms ease-in forwards;
+        }
+    }
+}
+
+// (New) menu animation
+.new{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    background-color: $clr-tertiary;
+    border-radius: 0.2rem;
+    opacity: 1;
+    animation: new 2000ms  0s infinite alternate-reverse;
+    p{
+        color: darken($clr-tertiary, 30);
+        font-size: 14px;
+        font-weight: 600;
+        margin: 7px;
+    }
+}
 
 // Card menu :menu page
 
 .cardmenu{
-    width: 350px;
+    width: 90%;
     height: 70px;
-    margin:15px 0px 0px 15px;
+    margin:15px 15px 0px 15px;
     box-shadow: 0.2rem 0.2rem 1rem rgb(180, 177, 177);
     border-radius: 1rem;
     overflow: hidden;
+    opacity: 0;
+    @include desktop{
+        width: 30%;
+    }
     h3{
         width: 100%;
         margin: 0 0 0 10px;
@@ -120,6 +129,7 @@
         }
     }   
 }
+// Card menu (Appears) command animation
 .order{
     position: absolute;
     right:-62px;
@@ -155,15 +165,14 @@
     }
 }
 .cardmenu--delay0{
-    animation: cardmenu-appears 2000ms 1 ease-in-out forwards;
+    animation: cardmenu-appears 1500ms 1 ease-in-out forwards;
 }
 .cardmenu--delay1{
-    animation: cardmenu-appears 2000ms 100ms 1 ease-in-out forwards;   
+    animation: cardmenu-appears 1500ms 200ms 1 ease-in-out forwards;   
 }
 .cardmenu--delay2{
-    animation: cardmenu-appears 2000ms 200ms 1 ease-in-out forwards;   
+    animation: cardmenu-appears 1500ms 400ms 1 ease-in-out forwards;   
 } 
 .cardmenu--delay3{
-    animation: cardmenu-appears 2000ms 300ms 1 ease-in-out forwards;   
-
+    animation: cardmenu-appears 1500ms 600ms 1 ease-in-out forwards running;   
 }

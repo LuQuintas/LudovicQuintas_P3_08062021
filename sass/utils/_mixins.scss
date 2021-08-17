@@ -13,3 +13,14 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+@mixin mobile-down{
+    @media screen and(min-width:map-get($breakpoints, mobile-down)){
+        &{@content;}
+    }
+}
+@mixin desktop{
+    @media screen and(min-width:map-get($breakpoints, desktop)){
+        &{@content;}
+    }
+}

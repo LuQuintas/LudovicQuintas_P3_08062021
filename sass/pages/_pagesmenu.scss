@@ -20,13 +20,12 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     h1{
         font-family: "shrikhand";
         font-size: 28px;
         margin: 35px 0 10px 20px;
-    }
-    .like__link{
-        width: 100%;
+        white-space: nowrap;
     }
     .far.fa-heart{
         position: absolute;
@@ -47,10 +46,15 @@
         -webkit-text-fill-color:transparent;
         opacity: 0;
         cursor: pointer;
-        &:hover{
-            animation: like 600ms ease-in-out forwards ;
-        }
     }
+}
+.like__link:hover .like{
+    animation: like 600ms ease-in-out forwards ;
+}
+.submenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .submenu__title{
     color: #404040;
