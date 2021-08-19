@@ -9,8 +9,10 @@
 @import"./layouts/footer";
 // Components
 @import "./components/card";
+@import"./components/likeheart";
 @import"./components/locationplace";
 @import"./components/btn";
 // Pages
+@import"./pages/loaderpage";
 @import"./pages/mainpage";
 @import"./pages/pagesmenu";

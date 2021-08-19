@@ -14,49 +14,28 @@
     position: relative;
     background-color: #F6F6F6;
     margin-top: -45px;
-    border-radius: 3rem 3rem 0 0; 
-}
-.menu__title{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    h1{
-        font-family: "shrikhand";
-        font-size: 28px;
-        margin: 35px 0 10px 20px;
-        white-space: nowrap;
-    }
-    .far.fa-heart{
-        position: absolute;
-        right: 35px;
-        bottom: 20px;
-        font-size: 24px;
-        z-index: 1;
-        cursor: pointer;
-    }
-    .like{
-        position: absolute;
-        right: 35px;
-        bottom: 20px;
-        font-size: 25px;
-        z-index: 2;
-        background: $clr-heart;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color:transparent;
-        opacity: 0;
-        cursor: pointer;
+    border-radius: 3rem 3rem 0 0;
+    &__title{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            font-family: "shrikhand";
+            font-size: 28px;
+            margin: 35px 0 10px 20px;
+            white-space: nowrap;
+        } 
     }
 }
-.like__link:hover .like{
-    animation: like 600ms ease-in-out forwards ;
-}
+
 .submenu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .submenu__title{
+    width: 100%;
     color: #404040;
     font-weight: unset;
     margin-left: 20px;

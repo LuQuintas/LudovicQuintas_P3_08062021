@@ -1,0 +1,67 @@
+.loaderpage{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.98;
+    z-index: 100;
+    justify-items: center;
+    align-items: center;
+    animation: loaderpage 1000ms ease-in 3s 1 normal forwards;
+}
+.loaderconteiner{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 190px ;
+    margin: auto;
+    text-align: center;
+    &__title{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 10px 10px;
+        padding: 10px 0 5px 15px;
+        border-bottom: 2px solid $clr-tertiary;  
+        p{
+            font-family: "shrikhand";
+            font-size: 2em;
+            letter-spacing: 0.5em;
+            margin: auto;
+            color: blanchedalmond;
+        }
+    }
+    &__welcome{
+        width: 100%;
+        font-family: "roboto";
+        font-size: 28px;
+        color: blanchedalmond;
+        letter-spacing: 0.5em;
+        margin: 0 0 5px 5px;
+        opacity: 1;
+        transform-origin: left;
+        animation: welcome 3000ms 1 ease-in-out ;
+    }
+}
+.progressbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    z-index: 915;
+    border: 2px solid $clr-primary;
+    border-radius: 1rem;
+    &__bg{
+        width: 100%;
+        height: 15px;
+        margin: 0 5px;
+        background: $clr-heart;
+        transform-origin: left;
+        border-radius: 2rem;
+        transform: scaleX(1);
+        animation: loader 3000ms 1 ease-in-out ;
+    }
+} 

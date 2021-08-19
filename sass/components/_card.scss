@@ -10,24 +10,6 @@
     @include mobile-down{
         width: 45%;
     }
-    .far.fa-heart{
-        position: absolute;
-        right: 35px;
-        bottom: 20px;
-        font-size: 24px;
-        z-index: 1;
-    }
-    .like{
-        position: absolute;
-        right: 34px;
-        bottom: 19px;
-        font-size: 26px;
-        z-index: 2;
-        background: $clr-heart;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color:transparent;
-        opacity: 0;
-    }
     &__info{
         display: flex;
         flex-direction: column;
@@ -174,5 +156,5 @@
     animation: cardmenu-appears 1500ms 400ms 1 ease-in-out forwards;   
 } 
 .cardmenu--delay3{
-    animation: cardmenu-appears 1500ms 600ms 1 ease-in-out forwards running;   
+    animation: cardmenu-appears 1500ms 600ms 1 ease-in-out forwards;   
 }

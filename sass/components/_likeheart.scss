@@ -1,0 +1,23 @@
+.like__container{
+    position:absolute;
+    right: 34px;
+    bottom: 19px;
+    width: 30px;
+    height: 30px;
+    &:hover .like{
+        animation: like 500ms ease-in forwards;
+    }
+    .far.fa-heart{
+        font-size: 30px;
+    }
+    .like{
+        position: relative;
+        top: -31px;
+        left: -1px;
+        font-size: 32px;
+        background: $clr-heart;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        opacity: 0;
+    }
+}
