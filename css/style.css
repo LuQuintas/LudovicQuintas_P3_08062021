@@ -55,11 +55,11 @@
   }
   80% {
     opacity: 0.5;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   100% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
 @keyframes new {
@@ -155,12 +155,6 @@ footer .partenaire p {
 }
 footer p {
   margin: 0px 0 0px 15px;
-}
-
-.validator {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
 
 .card {
@@ -336,16 +330,17 @@ footer p {
   cursor: pointer;
 }
 .like__container:hover .like {
-  animation: like 500ms ease-in forwards;
+  animation: like 600ms ease-in-out forwards;
 }
 .like__container .far.fa-heart {
   font-size: 30px;
+  mix-blend-mode: lighten;
 }
 .like__container .like {
   position: relative;
-  top: -31px;
-  left: -1px;
-  font-size: 32px;
+  top: -32px;
+  left: -2px;
+  font-size: 34px;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;

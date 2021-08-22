@@ -7,16 +7,17 @@
     height: 30px;
     cursor: pointer;
     &:hover .like{
-        animation: like 500ms ease-in forwards;
+        animation: like 600ms ease-in-out forwards;
     }
     .far.fa-heart{
         font-size: 30px;
+        mix-blend-mode:lighten;
     }
     .like{
         position: relative;
-        top: -31px;
-        left: -1px;
-        font-size: 32px;
+        top: -32px;
+        left: -2px;
+        font-size: 34px;
         background: $clr-heart;
         -webkit-background-clip: text;
         background-clip: text;
