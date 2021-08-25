@@ -6,6 +6,7 @@
     border-radius:1rem;
     margin: 15px 15px;
     cursor: pointer;
+    background-color: #fff;
     @include shadow;
     @include mobile-down{
         width: 45%;
@@ -67,11 +68,12 @@
 .cardmenu{
     width: 90%;
     height: 70px;
+    background-color: #fff;
     margin:15px 15px 0px 15px;
-    box-shadow: 0.2rem 0.2rem 1rem rgb(180, 177, 177);
     border-radius: 1rem;
     overflow: hidden;
     opacity: 0;
+    @include shadow;
     @include desktop{
         width: 30%;
     }
@@ -111,7 +113,7 @@
 // Card menu (Appears) command animation
 .order{
     position: absolute;
-    right:-62px;
+    right:-65px;
     display: flex;
     justify-content: center;
     text-align: center;

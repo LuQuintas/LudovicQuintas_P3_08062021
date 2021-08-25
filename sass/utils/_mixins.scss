@@ -1,10 +1,10 @@
 @mixin shadow {
-    box-shadow:.2rem 0.2rem 1rem rgb(180, 177, 177);
+    box-shadow: 0 0 15px rgb(199, 197, 197);
 }
 
 @mixin btn-zoom {
     transform: scale(1.0);
-    box-shadow:.3rem 0.4rem 2rem rgb(119, 117, 117);
+    box-shadow: 0 0 18px rgb(158, 156, 156);
     filter:brightness(1.1);
     cursor: pointer;
 }

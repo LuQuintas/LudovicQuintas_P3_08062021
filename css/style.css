@@ -164,7 +164,8 @@ footer p {
   border-radius: 1rem;
   margin: 15px 15px;
   cursor: pointer;
-  box-shadow: 0.2rem 0.2rem 1rem #b4b1b1;
+  background-color: #fff;
+  box-shadow: 0 0 15px #c7c5c5;
 }
 @media screen and (min-width: 600px) {
   .card {
@@ -222,11 +223,12 @@ footer p {
 .cardmenu {
   width: 90%;
   height: 70px;
+  background-color: #fff;
   margin: 15px 15px 0px 15px;
-  box-shadow: 0.2rem 0.2rem 1rem #b4b1b1;
   border-radius: 1rem;
   overflow: hidden;
   opacity: 0;
+  box-shadow: 0 0 15px #c7c5c5;
 }
 @media screen and (min-width: 1366px) {
   .cardmenu {
@@ -272,7 +274,7 @@ footer p {
 
 .order {
   position: absolute;
-  right: -62px;
+  right: -65px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -343,6 +345,7 @@ footer p {
   font-size: 34px;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
@@ -351,6 +354,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: inset 0 2px 6px #cecccc;
   background-color: #EAEAEA;
   height: 48px;
   font-size: 15px;
@@ -380,12 +384,12 @@ footer p {
   font-weight: 500;
   letter-spacing: 0.01rem;
   margin-bottom: 55px;
-  box-shadow: 0.2rem 0.2rem 1rem #b4b1b1;
+  box-shadow: 0 0 15px #c7c5c5;
   transform: scale(1);
 }
 .btn__gradient:hover {
   transform: scale(1);
-  box-shadow: 0.3rem 0.4rem 2rem #777575;
+  box-shadow: 0 0 18px #9e9c9c;
   filter: brightness(1.1);
   cursor: pointer;
 }
@@ -401,7 +405,7 @@ footer p {
   border-radius: 1.5rem;
   height: 75px;
   width: 90%;
-  box-shadow: 0.2rem 0.2rem 1rem #b4b1b1;
+  box-shadow: 0 0 15px #c7c5c5;
 }
 @media screen and (min-width: 1366px) {
   .function__btn {
@@ -475,13 +479,13 @@ footer p {
   font-size: 2em;
   letter-spacing: 0.5em;
   margin: auto;
-  color: blanchedalmond;
+  color: #fff;
 }
 .loaderconteiner__welcome {
   width: 100%;
   font-family: "roboto";
   font-size: 28px;
-  color: blanchedalmond;
+  color: #fff;
   letter-spacing: 0.5em;
   margin: 0 0 5px 5px;
   opacity: 1;
@@ -639,6 +643,7 @@ footer p {
 .submenu {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
   justify-content: space-around;
 }
 
@@ -647,6 +652,7 @@ footer p {
   color: #404040;
   font-weight: unset;
   margin-left: 20px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   position: relative;
 }
