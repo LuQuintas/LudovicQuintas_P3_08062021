@@ -3,7 +3,7 @@
 }
 
 @mixin btn-zoom {
-    transform: scale(1.02);
+    transform: scale(1.0);
     box-shadow:.3rem 0.4rem 2rem rgb(119, 117, 117);
     filter:brightness(1.1);
     cursor: pointer;
