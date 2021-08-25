@@ -437,7 +437,7 @@ footer p {
   left: -1px;
   font-size: 32px;
   background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
